@@ -10,7 +10,7 @@ ARGS ?=
 
 serve-dev: .make/poetry_install .env
 	@echo "Starting Server..."
-	@poetry run eidolon-server -m local_dev resources --dotenv .env $(ARGS)
+	@poetry run eidolon-server -p ${PORT} -m local_dev resources --dotenv .env $(ARGS)
 
 serve: .make/poetry_install .env
 	@echo "Starting Server..."

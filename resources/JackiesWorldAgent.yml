@@ -1,0 +1,6 @@
+apiVersion: eidolon/v1
+kind: Agent
+metadata:
+  name: JackiesWorld
+
+spec: "eidolon_examples.jackies_world.JackiesWorld.JackiesWorld"
