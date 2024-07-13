@@ -14,7 +14,7 @@ check: .env
 	@[[ -z "${OPENAI_API_KEY}" ]] && echo "🚨 Error: OPENAI_API_KEY not set" && exit 1 || echo "👍 OPENAI_API_KEY set"
 
 serve-dev: .make/poetry_install .env
-	poetry run eidolon-server -m local_dev resources
+	poetry run eidolon-server -p ${PORT} -m local_dev resources
 
 serve: .make/poetry_install .env
 	poetry run eidolon-server resources
