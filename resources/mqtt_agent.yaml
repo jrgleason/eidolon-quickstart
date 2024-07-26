@@ -1,0 +1,6 @@
+apiVersion: eidolon/v1
+kind: Agent
+metadata:
+  name: mqtt_agent
+
+spec: "components.MqttAgent.MqttAgent"
